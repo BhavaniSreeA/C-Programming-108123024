@@ -13,15 +13,10 @@ int main()
 		for(j=0;j<n;j++)
 		{
 			if(a[j]==a[i]&&j!=i)
-				{
-					for(k=i+1;k<n;k++)
-					{
-					if(a[i]==a[k]&&k!=i)
-					printf("%d",a[i]);
-					}
-				}
+				printf("%d",a[i]);
+				
 			else
-			continue;
+				continue;
 		}
 	}
 	return 0;
