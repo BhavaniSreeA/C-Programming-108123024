@@ -11,6 +11,6 @@ int main()
 		scanf("%d",&a[i][i]);
 		s=s+a[i][i];
 	}
-	printf("Sum of right diagonal elements is %d",s);
+	printf("Sum of left diagonal elements is %d",s);
 	return 0;
 }
