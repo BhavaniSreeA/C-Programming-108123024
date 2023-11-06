@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int n,i,j,t,k;
+	int n,i,j,t,k;
 	printf("Enter number of characters and k ");
 	scanf("%d%d",&n,&k);
 	printf("Enter %d numbers as an input to array",n);
@@ -15,11 +15,11 @@ int n,i,j,t,k;
 				 if(a[j]>a[j+1])
 			    {
 					t=a[j];
-			    	a[j]=a[j+1];
-			    	a[j+1]=t;
-				}
+			    		a[j]=a[j+1];
+			    		a[j+1]=t;
+	                    }
 			}
 		}
 	printf("The kth largest and kth smallest number are %d and %d\n",a[n-k],a[k-1]);
-    return 0;
+    	return 0;
 }
