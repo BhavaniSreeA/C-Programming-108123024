@@ -1,34 +1,29 @@
 #include<stdio.h>
 int main()
 {
-	int n,i,j,s;
+	int n,i,j;
 	printf("Enter a number");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
-		{ 
-		for(s=0;s<n-i-1;s++)
-		printf(" ");
-		for(j=0;j<i+1;j++)
-			{
+	{
+		for(j=0;j<n+2;j++)
+		{
 			if(i%2==0)
-			printf("*");
-			else
-			printf("-");
+			{
+				if(j==n+1)
+				printf("%d",i+2);
+				else
+				printf("%d",i+1);
 			}
-		printf("\n");
+			else
+			{
+				if(j==0)
+				printf("%d",i+2);
+				else
+				printf("%d",i+1);
+			}
 		}
-	for(i=0;i<n-1;i++)
-		{ 
-		for(s=0;s<i+1;s++)
-		printf(" ");
-		for(j=0;j<n-i-1;j++)
-			{
-			if(i%2==0)
-			printf("-");
-			else
-			printf("*");
-			}
 		printf("\n");
-		}	
+	}
 	return 0;
 }
