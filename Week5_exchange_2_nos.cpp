@@ -12,7 +12,7 @@ int main()
 	{
 			t=a[i];
 			a[i]=a[i+1];
-	    	a[i+1]=t;
+	    		a[i+1]=t;
 	}
 	printf("The elements are\n");
 		for(i=0;i<n;i++)
