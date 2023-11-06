@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int n,i,t,p,q;
+	int n,i,t,p,q;
 	printf("Enter a number");
 	scanf("%d",&n);
 	printf("Enter %d numbers as an input to array",n);
@@ -12,7 +12,7 @@ int n,i,t,p,q;
 	{
 			t=a[p];
 			a[p]=a[q];
-	    	a[q]=t;
+	    		a[q]=t;
 	}
 	printf("The reverse of the sequence is\n");
 		for(i=0;i<n;i++)
